@@ -3,6 +3,7 @@ const calculate = () => {
   let unit = document.querySelector("#unit").value;
   let ageGrp = parseInt(document.querySelector("#ageSelct").value, 10);
   let ages = [40, 35, 30];
+  let waterV= document.querySelector("#valueWater").value
   let waterUnit = "ounces";
 
   if (unit === "1") {

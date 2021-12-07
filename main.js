@@ -17,6 +17,18 @@ const calculate = () => {
   // if showValue is 1 then ml. -> waterUnit = "ml"
   // else if is 2 then l. -> waterUnit = "l"
   // else show directly.
+  if( waterV === "0")
+    {
+      result= result*29.57353;
+      waterUnit="Ml";
+      result = result.toFixed(1);
+    }
+    else if (waterV === "1")
+    {
+      result= result/35.195
+      waterUnit="L";
+      result = result.toFixed(1);
+    }
 
   document.querySelector("#res").innerHTML = result + " " + waterUnit;
 };

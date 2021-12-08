@@ -1,6 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
+        <script>
+            if (!JSON.parse(localStorage.getItem("data"))) {
+                location.href = "index.html";
+            }
+        </script>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta http-equiv="X-UA-Compatible" content="ie=edge" />
@@ -20,18 +25,18 @@
 
     <body>
         <div>
-            <h2>Welcome <span id="username"></span></h2>
+            <h2 class="text-center mb-3">
+                Hi <span id="username"></span> you have to drink 4 glases more
+                to stay hydrated
+            </h2>
         </div>
         <div>
-            <h3 id="waterRes"></h3>
-            <small>daily intake</small>
-
-            <h3>Today's Water Intake 0 ml</h3>
+            <h2>0 / <span id="waterRes"></span></h2>
         </div>
         <div>
-            <button>250ml glass</button>
-            <button>500ml</button>
-            <button>1L</button>
+            <button class="btn btn-danger">-</button>
+            <button class="btn btn-primary">250ml</button>
+            <button class="btn btn-warning">+</button>
         </div>
     </body>
     <script src="home.js"></script>

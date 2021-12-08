@@ -1,4 +1,5 @@
-const calculate = () => {
+const calculate = (event) => {
+    event.preventDefault();
     let wt = parseInt(document.querySelector("#weight").value, 10);
     let name = document.querySelector("#name").value;
     let unit = document.querySelector("#unit").value;

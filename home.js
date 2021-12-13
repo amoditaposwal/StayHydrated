@@ -3,10 +3,37 @@ if (!data) {
     location.href = "index.html";
 }
 else{
-    const username = data.name;
-    const reqWater = data.reqWater;
-    const waterUnit = data.wUnit;
+    var todayIntake=0;
+    var quant=250;
+    var reqWater = data.reqWater;
+    var waterUnit = data.wUnit;
 
-    document.querySelector("#username").innerHTML = username;
-    document.querySelector("#waterRes").innerHTML = reqWater + " " + waterUnit;
+    document.querySelector("#show").innerHTML = reqWater+ " "+waterUnit;
+    
+    function updateRemaining(){
+       
+        document.querySelector("#remain").innerHTML= (reqWater-todayIntake) +" "+waterUnit;
+
+    }
+   updateRemaining()
+   function water(){
+       if(waterUnit=="Ml")
+       {
+        todayIntake=todayIntake+250;
+       }
+       
+       else if(waterUnit=="L")
+       {
+          todayIntake=todayIntake+0.25;
+       }
+       else
+       {
+          todayIntake=todayIntake+8.4;
+          
+
+       }
+       todayIntake=todayIntake.toFixed(2);
+       updateRemaining()
+   }
+
 }

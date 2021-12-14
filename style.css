@@ -28,93 +28,65 @@
     background-color: rgb(219, 215, 215);
     margin-top: 30px;
 }
-#blue{
-    background-color: #94BEFF;
-}
-#c1{
-    color:white;
-}
-#c2{
-    font-weight: 600;
-
-}
-#wave{
+#blue {
+    background-color: #94beff;
+    padding: 35px 10px;
+  }
+  #c1 {
     color: white;
+  }
+  #c2 {
     font-weight: 600;
-}
-#name{
+    display: block;
+    text-align: right;
+  }
+  #wave {
+    color: white;
+    text-align: right;
+    font-weight: 600;
+    font-size: 4rem;
+  }
+  .div1 {
+    text-align: center;
+    padding: 5px 15px;
+    margin: 8px auto;
+  }
+  input,
+  select {
     border-radius: 10px;
     outline: none;
     border: none;
     font-size: 20px;
-    padding: 8px 0;
-    width: 200px;
+    padding: 15px 0;
+    width: 70%;
     text-align: center;
-    margin-top: 20px;
-    margin-bottom: 10px;
     background-color: rgb(236, 236, 236);
-}
-
-#weight{
-    border-radius: 10px;
-    background-color:rgb(236, 236, 236);
-    outline: none;
-    border: none;
-    width:200px;
-    padding:8px 0;
-    text-align: center;
-    margin-top: 15px;
-    margin-bottom: 10px;
-}
-
-#unit{
-    border-radius: 10px;
-    background-color:rgb(236, 236, 236);
-    outline: none;
-    border: none;
-    width:200px;
-    padding:8px 0;
-    text-align: center;
-    margin-top: 15px;
-    margin-bottom: 10px;
-
-}
-#ageSelct{
-    border-radius: 10px;
-    background-color:rgb(236, 236, 236);
-    outline: none;
-    border: none;
-    width:200px;
-    padding:8px 0;
-    text-align: center;
-    margin-top: 15px;
-    margin-bottom: 10px;
-}
-#valueWater{
-    border-radius: 10px;
-    background-color:rgb(236, 236, 236);
-    outline: none;
-    border: none;
-    width:200px;
-    padding:8px 0;
-    text-align: center;
-    margin-top: 15px;
-    margin-bottom: 10px;
-}
-.div1{
-    color:black;
+  }
+  .div1 label {
+    color: black;
     font-weight: 600;
-}
-#btnn{
-    background-color:#94BEFF;
+    width: 30%;
+  }
+  #btnn {
+    background-color: #94beff;
     color: white;
     border-radius: 10px;
     outline: none;
     border: none;
-    width:200px;
-    padding:10px 0;
+    width: 200px;
+    padding: 10px 0;
     text-align: center;
     margin-top: 20px;
     margin-bottom: 10px;
-
-}
+  }
+  @media only screen and (min-width: 720px) {
+    #c2 {
+      text-align: center;
+    }
+    #wave {
+      text-align: center;
+    }
+    .div1 {
+      width: 50%;
+    }
+  }

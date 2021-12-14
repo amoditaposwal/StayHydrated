@@ -21,49 +21,49 @@
     <body>
         <div>
             <div id="blue">
-                <span id="c1">Lets Begin a new journey to</span>
-                <h1 id="wave">STAY<br>HYDRATED</h1>
-                <span id="c2">everyday.</span>
-
-        </div>
-            <form>  
-                <div>
-                    <label class="div1" for="name">Name </label>
-                    <input type="text" id="name" required />
-                </div>
-    
-                <div>
-                    <label class="div1" for="weight">Weight  </label>
-                    <input type="number" id="weight" required />
-                </div>
-                <div>
-                    <label class="div1" for="Unit">Unit</label>
-                    <select name="units" id="unit">
-                        <option value="1">Kgs</option>
-                        <option value="2">Pound</option>
-                    </select>
-                </div>
-                <div>
-                    <label class="div1" for="age">Age</label>
-                    <select name="age" id="ageSelct">
-                        <option value="none" selected>Select age</option>
-                        <option value="0">Younger than 30</option>
-                        <option value="1">Between 30 and 55</option>
-                        <option value="2">Above 55</option>
-                    </select>
-                </div>
-                <div>
-                    <label class="div1" for="water">Water</label>
-                    <select name="water" id="valueWater">
-                        <option value="none" selected>Select</option>
-                        <option value="0">Ml</option>
-                        <option value="1">L</option>
-                    </select>
-                </div>
-                <button id ="btnn" onclick="calculate(event);" type="submit">Calculate</button>
+              <h1 id="wave">STAY<br />HYDRATED</h1>
+              <span id="c2">everyday.</span>
+            </div>
+            <form>
+              <div class="div1">
+                <label for="name">Name </label>
+                <input type="text" id="name" required />
+              </div>
+      
+              <div class="div1">
+                <label for="weight">Weight </label>
+                <input type="number" id="weight" required />
+              </div>
+              <div class="div1">
+                <label for="Unit">Unit</label>
+                <select name="units" id="unit">
+                  <option value="1">Kgs</option>
+                  <option value="2">Pound</option>
+                </select>
+              </div>
+              <div class="div1">
+                <label for="age">Age</label>
+                <select name="age" id="ageSelct">
+                  <option value="none" selected>Select age</option>
+                  <option value="0">Younger than 30</option>
+                  <option value="1">Between 30 and 55</option>
+                  <option value="2">Above 55</option>
+                </select>
+              </div>
+              <div class="div1">
+                <label for="water">Water</label>
+                <select name="water" id="valueWater">
+                  <option value="none" selected>Select</option>
+                  <option value="0">Ml</option>
+                  <option value="1">L</option>
+                </select>
+              </div>
+              <button id="btnn" onclick="calculate(event);" type="submit">
+                Calculate
+              </button>
             </form>
             <a href="home.html">Save and Continue</a>
-        </div>
+          </div>
     </body>
     <script src="main.js"></script>
 </html>

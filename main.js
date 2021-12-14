@@ -33,5 +33,5 @@ const calculate = (event) => {
         reqWater: result,
     };
     localStorage.setItem("data", JSON.stringify(data));
-    document.querySelector("#res").innerHTML = result + " " + waterUnit;
+    document.querySelector("#btnn").innerHTML = result + " " + waterUnit+" "+ "required water.";
 };
